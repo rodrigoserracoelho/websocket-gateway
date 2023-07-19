@@ -1,0 +1,14 @@
+server:
+  port: 8380
+capi:
+  websocket:
+    server:
+      host: localhost
+      port: 8381
+  oidc:
+    provider:
+      enabled: true
+      host: http://localhost:8080
+      realm: /realms/apigw
+      clientId:
+      clientSecret:
