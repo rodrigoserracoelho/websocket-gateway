@@ -1,13 +1,14 @@
-package io.surisoft.websocker.server.cache;
+package io.surisoft.websocker.server.configuration;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.undertow.server.HttpHandler;
 
 public class WebsocketClient {
     private String host;
     private int port;
     private String path;
+    @JsonIgnore
     private HttpHandler httpHandler;
-
     private boolean requiresSubscription;
     private String subscriptionRole;
 
@@ -58,5 +59,4 @@ public class WebsocketClient {
     public void setSubscriptionRole(String subscriptionRole) {
         this.subscriptionRole = subscriptionRole;
     }
-
 }

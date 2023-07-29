@@ -5,7 +5,7 @@ import com.nimbusds.jose.proc.BadJOSEException;
 import com.nimbusds.jose.proc.SecurityContext;
 import com.nimbusds.jwt.JWTClaimsSet;
 import com.nimbusds.jwt.proc.DefaultJWTProcessor;
-import io.surisoft.websocker.server.cache.WebsocketClient;
+import io.surisoft.websocker.server.configuration.WebsocketClient;
 import io.surisoft.websocker.server.websocket.Constants;
 import io.undertow.server.HttpServerExchange;
 import io.undertow.util.HttpString;
